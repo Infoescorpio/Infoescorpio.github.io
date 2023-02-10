@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background: white;
+    height: 100%;
+}
+
+/* Comenzamos la sección del encabezado*/
+.header{
+    background: white;
+    width: 100%;
+    /*height: 25%; valor presentado */
+    height: 200px;
+    display: flex;
+}
+
+.foto{
+    background: white;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.header_img{
+    object-fit:contain;
+    object-position: right;
+    /*width: 99%;*/
+}
+
+.nombre{
+    background: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6f7f7e;
+}
+
+.nombre h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.nombre h2{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
+/* Finalizamos la sección del encabezado*/
+
+
+/*Comienza la sección de navegación*/
+.nav{
+    background: white;
+    width: 100%;
+    height: 5 0px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+} 
+
+.nav p{
+    text-decoration: none;
+    color: #6f7f7e;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 5px;    
+}
+
+.nav p:hover{
+    color: white;
+    background-color: #6f7f7e;
+    cursor: pointer;   
+}
+/*Finaliza navegación*/
+
+
+/*Inicia Main */
+.main{
+    background: black;
+    width: 100%;
+    /*height: calc(100vh-200);*/
+    height: 100vh;
+    /*height: calc(100vh-40px);*/
+    display: flex;
+}
+/*Finaliza Main*/
+
+
+/*Inicia Section*/
+.section{
+    
+    background: #6f7f7e;
+    width: 30%;
+    /*height: calc(100vh-200px);*/
+    height: 100%;
+    color: white;
+}
+
+.section h3{
+    font-family: 'Courgette', cursive;
+    color: white;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.section h4{
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    padding: 5px 5px 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section ul {
+    list-style-type: none;
+  }
+/*Finaliza Section*/
+
+/*Inicia Aside*/
+
+.aside{
+    background: white;
+    width: 70%;
+    color: #6f7f7e;
+}
+
+.aside h2{
+    font-family: 'Courgette', cursive;
+    padding: 10px 5px 5px 5px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.aside h3{
+    font-family: 'League Spartan', sans-serif;
+    padding: 25px 15px 5px 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.aside h4{
+    font-family: 'League Spartan', sans-serif;
+    padding: 15px 5px 0px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.aside h5{
+    padding: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #794c2f;
+}
+
+.aside h6{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 600;
+    color: #794c2f;
+    padding: 3px 5px 0px 30px;
+}
+
+.aside ul{
+    list-style-type: none;
+}
+
+.aside li{
+    padding: 2px 2px 2px 40px;
+}
+
+.aside input{
+    width: 150px;
+    padding: 3px 5px;
+}
+
+/*Finaliza Aside*/
+
+
+/*Comienza el form*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    
+}
+
+.cajas{
+    padding: 10px 10px;
+    margin: 15px 0px 0px 70px;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 2px 2px 2px 2px rgba(114, 113, 113, 0.288);
+}
+.area{
+    padding: 10px 10px;
+    margin: 15px 0px 0px 70px;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    box-shadow: 2px 2px 2px 2px rgba(114, 113, 113, 0.288);
+}
+
+.submit{
+    margin: 15px 0px 0px 150px;
+}
+
+/*Fin del form*/
+
+
+/*Comienza el footer*/
+.footer{
+    background: #6f7f7e;
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;    
+}
+
+.footer p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;    
+}
+
+/*finaliza el footer*/

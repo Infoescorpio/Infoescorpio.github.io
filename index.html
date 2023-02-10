@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Recursos/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="Css/estilos.css"/>
+    <link rel="icon" type="image/x-icon" href="recursos/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,16 +22,23 @@
     <meta property="og:title" content="Wanda Goicochea" />
     <meta property="og:type" content="Currículum Vitae" />
     <meta property="og:url" content="https://infoescorpio.github.io" />
-    <meta property="og:image" content="Recursos/preview.png" />
+    <meta property="og:image" content="recursos/preview.png" />
     <meta property="og:description" content="Contiene el CV de la arquitecta Wanda Goicochea" />
 
     <title>Currículum Vitae Wanda Goicochea</title>
 </head>
 <body>
-  
+    <Nav class = "nav">
+            
+      <p id = 'exp' >Experiencia</p>
+      <p id = 'hab' >Habilidades</p>
+      <p id = 'form' >Formación</p>
+      <p id = 'cont' >Contacto</p>
+      
+    </Nav>
     <header class = "header">
       <div class = "foto">
-        <img class = "header_img" src="Recursos/foto.jpg" alt="Foto Wanda Goicochea" >
+        <img class = "header_img" src="recursos/foto.jpg" alt="Foto Wanda Goicochea" >
       </div>
       <div class = "nombre">
         <h1>Wanda Goicochea</h1>
@@ -98,12 +105,7 @@
 
       </section>
       <aside class = "aside">
-        <Nav class = "nav">
-          
-          <p id = 'exp' >Experiencia</p>
-          <p id = 'hab' >Habilidades</p>
-          <p id = 'form' >Formación</p>
-        </Nav>
+        
         <div id = 'Experiencia'>
           <h2>Experiencia:</h2>
           <p><h3>ARQUITECTA</h3></p>
@@ -152,34 +154,47 @@
       <div id = 'Habilidades'>      
         <h2>Habilidades:</h2>
         
+        <h3>Diseño de renders: </h3>
           <ul>
             <li>
-              <h4>Diseño de renders: </h4><h6>Empleo de programas de diseño como Sketchup
+              <h5>Empleo de programas de diseño como Sketchup
                 para crear estructuras realistas en 3d y realizar recorridos virtuales para 
                 presentaciones ante propietarios e inversores.
-              </h6> 
+              </h5> 
             </li>
+          </ul>
+
+          <h3>Modelado en 3D</h3>
+            <ul>
+              <li>
+                <h5>Utilizando el diseño asistido por computadora
+                  se crean modelos en tres dimensiones de los proyectos plasmados en planos
+                  tradicionales en 2D. De esta manera es más fácil imaginar como lucirían
+                  los diversos proyectos en la realidad.
+                </h5>
+              </li>
+            </ul>
+
+        <h3>Diseño de planos</h3>    
+          <ul>  
             <li>
-              <h4>Modelado en 3D</h4><h6>Utilizando el diseño asistido por computadora
-                se crean modelos en tres dimensiones de los proyectos plasmados en planos
-                tradicionales en 2D. De esta manera es más fácil imaginar como lucirían
-                los diversos proyectos en la realidad.
-              </h6>
-            </li>
-            <li>
-              <h4>Diseño de planos</h4><h6>Utilizando programas de dibujo como el muy
+              <h5>Utilizando programas de dibujo como el muy
                 extendido Autocad se logran dibujar planos con extraordinaria precisión,
                 teniendo, además, la posibilidad de llevarlos a 3D más adelante.
                 Dibujar con Autocad permite modificar de forma económica un proyecto tantas
                 veces como sea preciso hasta dejar su proyecto fiel a su requerimiento.
-              </h6>
+              </h5>
             </li>
+          </ul>
+
+        <h3>Presupuestación</h3>
+          <ul>
             <li>
-              <h4>Presupuestación</h4><h6>Un buen proyecto no estaría bien presentado sin
+              <h5>Un buen proyecto no estaría bien presentado sin
                 un correcto cálculo del presupuesto que incluya materiales, mano de obra
               calificada, honorarios de los profesionales intervinientes y los costos de
             los trámites necesarios para su presentación, inspección y aprobación. Un buen
-          presupuesto al inicio del proyecto evita disgustos posteriores- </h6>
+          presupuesto al inicio del proyecto evita disgustos posteriores- </h5>
             </li>
           </ul>
       </div>
@@ -198,13 +213,28 @@
             <ul><li>
               <p><h5>Grado en arquitectura 2009-2014</h5></p>
             </li></ul>
-          </div>
+      </div>
+      <div id = 'Contacto'>
+        <form action = "" method="post" class = "form">
+          <h2>Contácteme:</h2>
+            
+            <input type="text" class = "cajas" placeholder="Apellidos y nombres" autocomplete="off" name="tNombre" id="idNombre" required>
+            
+            <input type="email" class = "cajas" placeholder="e-mail" autocomplete="off" name="temail" id="idEMail" required>
 
+            <input type="tel" class = "cajas" placeholder="Teléfono" autocomplete="off" name="ttel" id="idTel" required>
+
+            <textarea class="area" placeholder="Escriba su mensaje aquí" name="tMensaje" id="idMensaje" cols="30" rows="10" required></textarea>
+
+            <input type="submit" class="submit" value="Enviar" id="idEnviar">
+            
+        </form>
+      </div>
       </aside>
     </main>
     <footer class = "footer">
       &copy; <a href="">contacto@rusticdesign.com.ar</a><p>Derechos reservados.</p>
     </footer>
-    <script src="Scripts/funciones.js"></script>
+    <script src="scripts/funciones.js"></script>
 </body>
 </html>
